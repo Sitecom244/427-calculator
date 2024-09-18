@@ -145,64 +145,64 @@
     </style>
 </head>
 <body>
-    <h1>Postal parcel box – Custom box Fefco 427</h1>
+    <h1>Postdoos op maat - Fefco 427</h1>
     <div id="wbc-calcform" class="calculator" data-local-factor="1" data-global-factor="1.12">
         <div class="calculator-fields">
             <div class="calculator-item">
-                <label for="field-box-lengte">Length (mm)</label>
+                <label for="field-box-lengte">Lengte (mm)</label>
                 <input id="field-box-lengte" type="number" class="wbc-calc-field" required>
             </div>
             <div class="calculator-item">
-                <label for="field-box-breedte">Width (mm)</label>
+                <label for="field-box-breedte">Breedte (mm)</label>
                 <input id="field-box-breedte" type="number" class="wbc-calc-field" required>
             </div>
             <div class="calculator-item">
-                <label for="field-box-hoogte">Height (mm)</label>
+                <label for="field-box-hoogte">Hoogte (mm)</label>
                 <input id="field-box-hoogte" type="number" class="wbc-calc-field" required>
             </div>
             <div class="calculator-item">
-                <label for="field-box-aantal">Quantity</label>
+                <label for="field-box-aantal">Aantal</label>
                 <input id="field-box-aantal" type="number" class="wbc-calc-field" required>
             </div>
             <div class="calculator-item">
-                <label for="field-box-kwaliteit">Quality</label>
+                <label for="field-box-kwaliteit">Kwaliteit</label>
                 <select id="field-box-kwaliteit" class="wbc-calc-field" required>
-                    <option value="">Select quality</option>
-                    <option value="0.38">Single Wall 1.5mm</option>
-                    <option value="0.4">Single Wall 3mm</option>
-                    <option value="0.72">Double Wall 4.5mm</option>
+                    <option value="">Selecteer kwaliteit</option>
+                    <option value="0.38">Enkele golf 1.5mm</option>
+                    <option value="0.4">Enkele golf 3mm</option>
+                    <option value="0.72">Dubbele golf 4.5mm</option>
                 </select>
             </div>
             <div class="calculator-item">
-                <label for="field-box-kleur">Color</label>
+                <label for="field-box-kleur">Kleur</label>
                 <select id="field-box-kleur" class="wbc-calc-field" required>
-                    <option value="">Select color</option>
-                    <option value="0">Brown-Brown</option>
-                    <option value="0.08">White-White</option>
-                    <option value="1.05">Black-Black</option>
+                    <option value="">Selecteer kleur</option>
+                    <option value="0">Bruin-Bruin</option>
+                    <option value="0.08">Wit-Wit</option>
+                    <option value="1.05">Zwart-Zwart</option>
                 </select>
             </div>
         </div>
         <div class="calculator-results" id="wbc-prices">
-            <h3>Box Details</h3>
+            <h3>Details van de doos</h3>
             <p>Quality: <span id="wbc-detail-quality"></span></p>
             <p>Color: <span id="wbc-detail-color"></span></p>
             <p>Dimensions: <span id="wbc-price-length"></span> x <span id="wbc-price-width"></span> x <span id="wbc-price-height"></span> mm (L x W x H)</p>
             <p>Quantity: <span id="wbc-price-qty"></span></p>
             <h3>Pricing</h3>
-            <p>Price per unit (excl. VAT): €<span id="wbc-price-unit"></span></p>
-            <p>Die-cutting costs (excl. VAT): €<span id="wbc-price-stans"></span></p>
-            <p>Total price (excl. VAT): €<span id="wbc-price-total"></span></p>
+            <p>Prijs per stuk inclusief verzendkosten (ex BTW): €<span id="wbc-price-unit"></span></p>
+            <p>Stansmeskosten (ex BTW): €<span id="wbc-price-stans"></span></p>
+            <p>Totaalprijs inclusief verzendkosten (ex BTW): €<span id="wbc-price-total"></span></p>
         </div>
 
         <form action="https://formspree.io/f/myzgarep" method="POST">
-            <label for="company-name">Company Name:</label>
+            <label for="company-name">Bedrijfsnaam:</label>
             <input type="text" id="company-name" name="company-name" required>
 
-            <label for="phone-number">Phone Number:</label>
+            <label for="phone-number">Telefoonnummer:</label>
             <input type="tel" id="phone-number" name="phone-number" required>
 
-            <label for="email-address">Email Address:</label>
+            <label for="email-address">E-mail adres:</label>
             <input type="email" id="email-address" name="email-address" required>
 
             <input type="hidden" id="unit-price" name="unit-price">
@@ -214,11 +214,11 @@
             <input type="hidden" id="die-cutting-costs" name="die-cutting-costs">
 
             <div id="warning-message" class="warning-message">
-                Please fill in all fields to proceed.
+                Vul alle velden in om door te gaan
             </div>
-            <button type="submit" id="submit-request" disabled>Add to Cart</button>
+            <button type="submit" id="submit-request" disabled>Ontvang vrijblijvend een aanbod per mail</button>
             <div id="loading-indicator">
-                Sending the form, please wait...
+                Het formulier wordt verzonden, een moment geduld alstublieft...
             </div>
         </form>
     </div>
