@@ -66,6 +66,10 @@ function calcformCalculate() {
         AlertMSG('De prijs voor meer dan 1.000 dozen kunnen wij niet online berekenen. Neem contact met ons op om hier een offerte voor te ontvangen.');
         return;
     }
+    if (quantity < 201) {
+        AlertMSG('De minimale afname voor een doos op maat is 200 stuks. Verhoog het aantal of kies een van onze standaard dozen.');
+        return;
+    }
     if ((height + height + height + height + length + 30 > 1100) || (width + width + height + height + height + 40 > 1570)) {
         AlertMSG('Voor deze afmetingen kunnen wij niet direct een prijs berkenen. Neem contact met ons op om hier een offerte voor te ontvangen.');
         return;
