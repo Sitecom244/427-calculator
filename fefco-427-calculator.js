@@ -326,12 +326,21 @@ document.addEventListener('DOMContentLoaded', function() {
         field.addEventListener('input', updateWarningAndButton);
     });
 
-    document.getElementById('submit-request').addEventListener('click', function(event) {
-        event.preventDefault();
-        document.getElementById('submit-request').style.display = 'none';
-        document.getElementById('loading-indicator').style.display = 'block';
+document.getElementById('submit-request').addEventListener('click', function(event) {
+    event.preventDefault();
+
+    // Zorg dat de laatste berekening wordt uitgevoerd en hidden velden worden gevuld
+    calcformCalculate();
+
+    document.getElementById('submit-request').style.display = 'none';
+    document.getElementById('loading-indicator').style.display = 'block';
+
+    // Een korte delay zorgt dat de DOM de .value updates echt verwerkt
+    setTimeout(() => {
         document.querySelector('form').submit();
-    });
+    }, 50);
+});
+
 
     // Initial calculation and warning/button state update
     calcformCalculate();
